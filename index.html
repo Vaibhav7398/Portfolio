@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+   <!-- // <link rel="stylesheet" href="ripple-effect.css"> -->
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/vs1.jpeg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h1>Hi, I'm <span>Vaibhav </span><br> your friend</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/photo.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a passionate and dedicated Computer Science and Engineering student at KIET Group of Institutions, with hands-on experience in full-stack web development using the MERN stack. I’ve actively contributed to impactful projects like a Swiggy clone and a Spotify-inspired UI, as well as team-based competition work for InnoTech. With a strong foundation in data structures, object-oriented programming, and modern frameworks, I thrive in collaborative environments and enjoy solving real-world problems through technology.
+
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <h2>Skills</h2>
+
+                        <p>
+                          <strong>Core Concepts:</strong><br>
+                          Data Structures, Operating Systems, Object-Oriented Programming (OOPs), Software Engineering.
+                        </p>
+                      
+                        <p>
+                          <strong>Programming Languages:</strong><br>
+                          C, C++, Java, Python, HTML, CSS, JavaScript.
+                        </p>
+                      
+                        <p>
+                          <strong>Frameworks & Libraries:</strong><br>
+                          React.js, Tailwind CSS.
+                        </p>
+                      
+                        <p>
+                          <strong>Tools & Platforms:</strong><br>
+                          VS Code, Git, MySQL, Postman, MongoDB Compass.
+                        </p>
+                      
+                        <p>
+                          <strong>Development Expertise:</strong><br>
+                          Full-stack Web Development (MERN Stack), RESTful API Integration, Responsive UI Design.
+                        </p>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <h2>Experience</h2>
+
+                        <p>
+                          <strong>Microsoft Learn Student Ambassadors (MLSA)</strong><br>
+                          Built web applications using the MERN stack and integrated RESTful APIs.<br>
+                          Collaborated with a team to troubleshoot, optimize, and enhance features.<br>
+                          Gained hands-on experience with agile development practices.
+                        </p>
+                      
+                        <p>
+                          <strong>InnoTech Competition</strong><br>
+                          Developed a full-stack web application using React, Express, and MongoDB.<br>
+                          Integrated front-end and back-end components for a scalable application.<br>
+                          Collaborated with peers to solve technical challenges and improve performance.
+                        </p>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <p>
+                            <strong>KIET Group of Institutions, Ghaziabad</strong><br>
+                            Bachelor of Technology (B.Tech) in Computer Science & Engineering<br>
+                            <em>2022 – 2026</em><br>
+                            Current GPA: <strong>8.05/10</strong><br>
+                            Gained strong foundation in Data Structures, Operating Systems, OOPs, and Software Engineering.<br>
+                            Actively involved in technical projects and hackathons.
+                          </p>
+                        
+                          <p>
+                            <strong>Columbus International School, Ballia (CBSE Board)</strong><br>
+                            Class 12 (2021): <strong>94.4%</strong><br>
+                            Class 10 (2019): <strong>92.6%</strong><br>
+                            Demonstrated academic excellence with consistent top performance.
+                          </p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Full-Stack Web Development</h2>
+                <p>Experienced in building scalable and responsive web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js), including RESTful API integration and dynamic features.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>UI/UX Design</h2>
+                <p>Skilled in designing clean, intuitive user interfaces using HTML, CSS, and Tailwind CSS. Focused on delivering seamless user experiences across web and mobile platforms.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Frontend App Prototyping</h2>
+                <p>Built functional clones of popular apps like Spotify and Swiggy to demonstrate front-end design skills using HTML, CSS, JavaScript, and React. Specialized in responsive layouts and state management.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+
+            <div class="work">
+                <img src="images/swiggy-clone.png" alt="Swiggy Clone">
+                <div class="layer">
+                    <h3>Swiggy Clone</h3>
+                    <p>Built a responsive food delivery app clone using React and Tailwind CSS. Implemented dynamic user interaction and component-based design.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+
+            <div class="work">
+                <img src="images/tic-tac-toe.png" alt="Tic Tac Toe">
+                <div class="layer">
+                    <h3>Tic Tac Toe Game</h3>
+                    <p>Created an interactive browser-based game using HTML, CSS, and JavaScript with responsive layout and game logic.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+           
+
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> vaibhavsrivastava8576@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 7398666X`XX</p>
+                <div class="social-icons">
+                    <!-- <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a> -->
+                    <!-- <a href=""><i class="fab fa-twitter-square"></i></a> -->
+                    <a href="https://www.instagram.com/vaibhavsrivastava3729/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/vaibhav-srivastava-2b3934247/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images\resumeJP (1).pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+   
+</div>
+
+
+<!-- <script src="ripple-effect.js"></script> -->
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyYsko68RD7TUjO4d3yLz6ybB0QEFUVuGvtO4ke9YyR/exec';
+
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
